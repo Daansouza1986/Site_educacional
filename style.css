@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+:root {                 /* CRIAR VARIAVEIS EM CSS */
+    --cor0: #035412;
+    --cor1: #49d162;
+    --cor2: #37eb58ec;
+    --fontPrincipal: fantasy;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-size: 16px;
+}
+nav {
+    margin-top: -190px;
+    position: fixed;
+    background-color: transparent !important;
+   
+}
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: darkgray;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, #035412 20%, #49d162);
+    padding: 40px 40px 0px 40px;
+    color: white;
+    min-height: 150px;
+}
+header > h1 {
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.562);
+    font-weight: normal;
+}
+header > p{
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.397);
+    padding-bottom: 10px;
+}
+nav{
+     background-color: var(--cor0);
+     padding: 10px;
+     box-shadow: 0px 7px 7px #00000054;
+     
+}
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+nav > a:hover {
+    background-color: var(--cor1);
+    transition-duration: 0.7s; /* tempo de transição dos efeitos */
+    border-radius: 8px;
+    color: green;
+}
+h2,h3 {
+    font-family: 'android';
+    font-weight: normal;
+    color:var(--cor0);
+}
+h3 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    text-indent: 6px;
+}
+main {
+    text-decoration: justify;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    min-width: 320px; /* RESPONSIVO LARGURA MINIMA */
+    max-width: 800px; /* RESPONSIVO LARGURA MAXIMA */
+    border-radius: 0px 0px 10px 10px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px #00000073;
+}
+img{
+    width: 100%;  
+}
+main > p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+}
+main img.pequena{
+    max-width: 280px;
+    display: block;
+    margin: auto;
+}
+main strong {  /* TUDO QUE FOR ESTRONG NO MAIN */
+    background-color: rgba(6, 255, 6, 0.171);
+    padding: 1px;
+}
+main a {
+    text-decoration: none;
+}
+main a::after{
+    content: '\1F517';
+}
+.video { 
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+p#unico{
+    text-align: center;
+}
+p {
+    text-align: justify;
+    text-align: left;
+    display: block;
+}
+div {
+    margin-left: auto;
+    margin-right: auto;
+}
+aside {
+    background-color: rgba(28, 224, 116, 0.664);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 4px #0000007a;
+}
+h4 {
+    background-color: var(--cor0);
+    color: white;
+    font-weight: normal;
+    margin: -10px -10px 0px -10px;
+    padding: 6px;
+    border-radius: 10px 10px 0px 0px;
+}
+aside > p {
+    padding: 10px 0px;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 2em;
+}
+aside > ul {
+    list-style-type: '\2714\0020\0020'; /* \0020 espaço do check e os itens
+     */
+    line-height: 2em;
+    columns: 2;
+    border-radius: 6px;
+    list-style-position: inside;
+    padding: 16px;
+}
+footer{
+    margin: 0px;
+}
+footer > p{
+    text-align: center;
+    background: #035412;
+    color: white;
+    font-size: 0.8em;
+    margin: 0px;
+    padding: 4px;
+}
+footer a {
+    color: rgb(151, 71, 255);
+    text-decoration: none;
+}
+footer a::after {
+    content: '\1F517';
+}
